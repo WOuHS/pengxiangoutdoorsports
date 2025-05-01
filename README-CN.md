@@ -1,3 +1,17 @@
+# 个人使用备忘
+
+## 清空数据库方法
+
+删除 run_page/data.db
+
+删除 imported.json
+
+## gpx数据同步文件名不能有汉字
+
+用于keep同步时文件有问题无法同步的情况，需要清空数据库，从华为运动健康导出gpx加入仅由gpx同步的数据，重新导入，再使用keep同步一次所有数据
+
+持续时间较长，最好本地运行完后再上云
+
 ## note1: use v2.0 need change vercel setting from Gatsby to Vite
 
 ## note2: 2023.09.26 garmin need secret_string(and in Actions) get `python run_page/garmin_sync.py ${secret_string}` if cn `python run_page/garmin_sync.py ${secret_string} --is-cn`
